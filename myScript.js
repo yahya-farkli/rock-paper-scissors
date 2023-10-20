@@ -41,4 +41,10 @@ function playRound(playerSelection, computerSelection) {
     }
     
   }
-  playRound(playerSelection, computerSelection)
+  for (let round = 1; round <= 10; round++) {
+    let input = prompt("Enter something").toLowerCase();
+    const playerSelection = input;
+    const computerSelection = getComputerChoice(choiceArray);
+    playRound(playerSelection, computerSelection);
+}
+  //  playRound(playerSelection, computerSelection);
