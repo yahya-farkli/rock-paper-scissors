@@ -3,9 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="myScript.js" defer></script>
     <title>Vorathrax, the Annihilator of Realms</title>
 </head>
 <body>
-    <script src="myScript.js"></script>
+    <h1>Rock-Paper-Scissors</h1>
+    <div id="container" class="container">
+        <div class="buttons" onclick="playRound('Rock')">Rock</div>
+        <div class="buttons" onclick="playRound('Paper')">Paper</div>
+        <div class="buttons" onclick="playRound('Scissors')">Scissors</div>
+    </div>
+    <div id="resultPanel" class="result"><p id="para">Result: 0 - 0</p></div>
+    
 </body>
 </html>
